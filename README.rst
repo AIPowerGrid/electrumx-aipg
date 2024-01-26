@@ -19,7 +19,7 @@ Requires :code:`sudo apt-get install python3 python3-pip libleveldb-dev cmake`
 
 If you would like a guide on how to set up an AIPG Electrumx server
 for personal use or to add to the wider network, please read
-HyperPeek#9099's document `Setting Up an AIPG Electrumx Server <https://github.com/AIPowerGrid/electrumx-aipg/blob/master/ElectrumX%20AIPG%20How-To.md/>`_.
+HyperPeek#9099's document `Setting Up an AIPG Electrumx Server <https://github.com/gonner22/electrumx-aipg/blob/master/ElectrumX%20AIPG%20How-To.md/>`_.
 
 See `readthedocs <https://electrumx-ravencoin.readthedocs.io/>`_.
 
