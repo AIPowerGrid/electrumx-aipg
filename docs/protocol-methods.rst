@@ -511,7 +511,7 @@ Returns a list of restricted assets of who's qualifing string contains the quali
 blockchain.asset.list_addresses_by_asset
 ========================================
 
-An **optional** method. Requires --assetindex=1 in ravend. Returns an error if unavaliable. Returns a dictionary with information about what address(es) hold an asset.
+An **optional** method. Requires --assetindex=1 in aipgd. Returns an error if unavaliable. Returns a dictionary with information about what address(es) hold an asset.
 
 **Signature**
 
