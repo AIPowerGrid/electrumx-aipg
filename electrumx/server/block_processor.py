@@ -66,11 +66,11 @@ class OPPushDataGeneric:
 
 
 # Marks an address as valid for restricted assets via qualifier or restricted itself.
-ASSET_NULL_TEMPLATE = [OpCodes.OP_RVN_ASSET, OPPushDataGeneric(lambda x: x == 20), OPPushDataGeneric()]
+ASSET_NULL_TEMPLATE = [OpCodes.OP_AIPG_ASSET, OPPushDataGeneric(lambda x: x == 20), OPPushDataGeneric()]
 # Used with creating restricted assets. Dictates the qualifier assets associated.
-ASSET_NULL_VERIFIER_TEMPLATE = [OpCodes.OP_RVN_ASSET, OpCodes.OP_RESERVED, OPPushDataGeneric()]
+ASSET_NULL_VERIFIER_TEMPLATE = [OpCodes.OP_AIPG_ASSET, OpCodes.OP_RESERVED, OPPushDataGeneric()]
 # Stop all movements of a restricted asset.
-ASSET_GLOBAL_RESTRICTION_TEMPLATE = [OpCodes.OP_RVN_ASSET, OpCodes.OP_RESERVED, OpCodes.OP_RESERVED,
+ASSET_GLOBAL_RESTRICTION_TEMPLATE = [OpCodes.OP_AIPG_ASSET, OpCodes.OP_RESERVED, OpCodes.OP_RESERVED,
                                      OPPushDataGeneric()]
 
 
@@ -852,7 +852,7 @@ class BlockProcessor:
                     op_ptr = -1
                     for i in range(len(ops)):
                         op = ops[i][0]  # The OpCode
-                        if op == OpCodes.OP_RVN_ASSET:
+                        if op == OpCodes.OP_AIPG_ASSET:
                             op_ptr = i
                             break
                         if op == -1:
@@ -860,7 +860,7 @@ class BlockProcessor:
                             break
 
                     if invalid_script:
-                        # This script could not be parsed properly before any OP_RVN_ASSETs.
+                        # This script could not be parsed properly before any OP_AIPG_ASSETs.
                         # Hash as-is for possible spends and continue.
                         hashX = script_hashX(txout.pk_script)
                         append_hashX(hashX)
@@ -964,12 +964,12 @@ class BlockProcessor:
                         continue
 
                     if op_ptr > 0:
-                        # This script has OP_RVN_ASSET. Use everything before this for the script hash.
+                        # This script has OP_AIPG_ASSET. Use everything before this for the script hash.
                         # Get the raw script bytes ending ptr from the previous opcode.
                         script_hash_end = ops[op_ptr - 1][1]
                         hashX = script_hashX(txout.pk_script[:script_hash_end])
                     else:
-                        # There is no OP_RVN_ASSET. Hash as-is.
+                        # There is no OP_AIPG_ASSET. Hash as-is.
                         hashX = script_hashX(txout.pk_script)
 
                     # Now try and add asset info
@@ -1151,7 +1151,7 @@ class BlockProcessor:
                     # https://www.youtube.com/watch?v=iZlpsneDGBQ
 
                     if 0 < op_ptr < len(ops):
-                        assert ops[op_ptr][0] == OpCodes.OP_RVN_ASSET  # Sanity check
+                        assert ops[op_ptr][0] == OpCodes.OP_AIPG_ASSET  # Sanity check
                         try:
                             next_op = ops[op_ptr + 1]
                             if next_op[0] == -1:
