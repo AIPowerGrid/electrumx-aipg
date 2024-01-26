@@ -1041,7 +1041,7 @@ Return the confirmed and unconfirmed balances of a :ref:`script hash
 
   If more than one set of balances is to be returned, the result will
   be a dictionary of asset names whose value is the above. Ravencoin values
-  will be denoted as "rvn".
+  will be denoted as "AIPG".
 
 **Result Example**
 
@@ -1055,7 +1055,7 @@ Return the confirmed and unconfirmed balances of a :ref:`script hash
 ::
 
   {
-    "rvn": {
+    "AIPG": {
       "confirmed": 103873966,
       "unconfirmed": 23684400
     },

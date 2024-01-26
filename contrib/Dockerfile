@@ -52,7 +52,7 @@ ENV SSL_KEYFILE="${DB_DIRECTORY}/ssl_cert/server.key"
 # REQUIRED to connect with the larger electrumx ravencoin server network.
 # Full service://(IP/URL):PORT is REQUIRED
 # Example:
-# env REPORT_SERVICES = ssl://rvn4lyfe.com:50002,tcp://rvn4lyfe.com:50001
+# env REPORT_SERVICES = ssl://AIPG4lyfe.com:50002,tcp://AIPG4lyfe.com:50001
 
 EXPOSE 8000
 EXPOSE 50001

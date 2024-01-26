@@ -242,9 +242,9 @@ class Ravencoin(Coin):
     RPC_PORT = 8766
     REORG_LIMIT = 60
     PEERS = [
-        'rvn4lyfe.com t s',
+        'AIPG4lyfe.com t s',
         '162.19.153.65 t s',
-        'electrum-rvn.moontree.com s',
+        'electrum-AIPG.moontree.com s',
         'aq7vuqykup2voklcrpqljf6jnjkzrouowsjfrmybdou5kdhrpr6sjjid.onion t s',
     ]
 
@@ -289,5 +289,5 @@ class RavencoinTestnet(Ravencoin):
 
     RPC_PORT = 18766
     PEERS = [
-        "rvn4lyfe.com t50011 s50012",
+        "AIPG4lyfe.com t50011 s50012",
     ]
