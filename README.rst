@@ -1,31 +1,29 @@
 ===============================================
-Ravencoin ElectrumX - A fork of ElectrumX
+AIPG ElectrumX - A fork of ElectrumX
 ===============================================
 
 For a future network with bigger blocks.
 
   :Licence: MIT
   :Language: Python (>= 3.8)
-  :Author: Neil Booth
-  :Ravencoin Conversion: kralverde#0550 
+  :Original Author: Neil Booth from Ravencoin
+  :AIPG Dev: Topper
 
 Documentation
 =============
 
 Docker:
-:code:`docker pull kralverde/electrumx-ravencoin:latest`
+:code:`docker pull gonner2/electrumx-aipg:latest`
 
 Requires :code:`sudo apt-get install python3 python3-pip libleveldb-dev cmake`
 
-If you would like a guide on how to set up an Ravencoin Electrumx server
+If you would like a guide on how to set up an AIPG Electrumx server
 for personal use or to add to the wider network, please read
-HyperPeek#9099's document `Setting Up an Ravencoin Electrumx Server <https://github.com/Electrum-RVN-SIG/electrumx-ravencoin/blob/master/ElectrumX%20Ravencoin%20How-To.md/>`_.
+HyperPeek#9099's document `Setting Up an AIPG Electrumx Server <https://github.com/AIPowerGrid/electrumx-aipg/blob/master/ElectrumX%20AIPG%20How-To.md/>`_.
 
 See `readthedocs <https://electrumx-ravencoin.readthedocs.io/>`_.
 
 
-**kralverde#0550** on `discord`_  https://github.com/kralverde
+**Topper**  https://github.com/gonner22
 
-**Neil Booth**  kyuupichan@gmail.com  https://github.com/kyuupichan
-
-.. _discord: https://discord.gg/VuubYncHz4
+.. _discord: https://discord.gg/7g6tNz4a
