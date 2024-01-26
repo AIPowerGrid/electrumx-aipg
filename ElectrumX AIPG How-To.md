@@ -1,8 +1,7 @@
 # ﻿The Electrum Server
 
-##### Last change: 7JUN21, hyperpeek#9099
+##### Last change: 26JAN24, topper
 
-##### Tips: RKJLzw6kB6f4nm7Fwuy4aaK4ygSSfw9qCe
 
 ### Introduction
 
