@@ -18,3 +18,7 @@ Authors
 * kralverde
 
   Ravencoin conversion
+
+* topper
+
+  AIPG conversion
