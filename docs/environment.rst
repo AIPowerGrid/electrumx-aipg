@@ -105,7 +105,7 @@ Here are some examples of valid services::
   rpc://                                # RPC protocol, default host and port
 
 .. note:: ElectrumX will not serve any incoming connections until it has fully caught up
-          with your ravencoin daemon.  The only exception is local **RPC** connections,
+          with your AIPG daemon.  The only exception is local **RPC** connections,
           which are served at any time after the server has initialized.
 
 .. envvar:: SERVICES
@@ -237,7 +237,7 @@ These environment variables are optional:
   + ``$DONATION_ADDRESS`` is replaced with the address from the
     :envvar:`DONATION_ADDRESS` environment variable.
 
-  See `here <https://github.com/Electrum-RVN-SIG/electrumx-banner-updater>`_
+  See `here <https://github.com/AIPowerGrid/electrumx-aipg/banner-updater>`_
   for a script that updates a banner file periodically with useful
   statistics about fees, last block time and height, etc.
 
@@ -487,5 +487,5 @@ your available physical RAM:
 
   Write any outpoints that could not be parsed into the database to file.
 
-.. _lib/coins.py: https://github.com/Electrum-RVN-SIG/electrumx-ravencoin/blob/master/electrumx/lib/coins.py
+.. _lib/coins.py: https://github.com/AIPowerGrid/electrumx-aipg/blob/master/electrumx/lib/coins.py
 .. _uvloop: https://pypi.python.org/pypi/uvloop
