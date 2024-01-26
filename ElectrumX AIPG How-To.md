@@ -9,7 +9,7 @@ The AIPG electrum wallet – currently one of the few that support the hardware 
 
 ### System requirements
 
-While pretty much any Linux distribution should work, this guide uses Debian running on a VPS server as an example setup. Performance-wise, minimum specs are 40 GB of disk space, 2 GB RAM + 2 GB swap and preferably unlimited network traffic, as 1 TB can be easily reached within a few days. CPU is not too much of a concern, as the electrumx server we will use is mostly implemented in Python running in a single thread. Higher CPU spec- and / or count may speed up syncing, though a reliable and fast network connection is still the best guarantee for a seamless operation of the system. The following guide assumes you are running the AIPG and electrumx server as a non-root user and all commands should be run from the user account created. 
+While pretty much any Linux distribution should work, this guide uses Debian 12 running on a VPS server as an example setup. Performance-wise, minimum specs are 40 GB of disk space, 2 GB RAM + 2 GB swap and preferably unlimited network traffic, as 1 TB can be easily reached within a few days. CPU is not too much of a concern, as the electrumx server we will use is mostly implemented in Python running in a single thread. Higher CPU spec- and / or count may speed up syncing, though a reliable and fast network connection is still the best guarantee for a seamless operation of the system. The following guide assumes you are running the AIPG and electrumx server as a non-root user and all commands should be run from the user account created. 
 
 ### Step-by-step setup of the node
 
