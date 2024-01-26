@@ -1030,9 +1030,9 @@ Return the confirmed and unconfirmed balances of a :ref:`script hash
 
   *asset*
 
-    An optional value that can be: :const:`False` to return only the Ravencoin balance, :const:`True` to 
+    An optional value that can be: :const:`False` to return only the AIPG balance, :const:`True` to 
     return all balances, an asset name to return the balance for the asset, or a list of assets to return
-    the balances for those assets (a value of null indicates Ravencoin outputs).
+    the balances for those assets (a value of null indicates AIPG outputs).
 
 **Result**
 
@@ -1040,7 +1040,7 @@ Return the confirmed and unconfirmed balances of a :ref:`script hash
   each is the appropriate balance in minimum coin units (satoshis).
 
   If more than one set of balances is to be returned, the result will
-  be a dictionary of asset names whose value is the above. Ravencoin values
+  be a dictionary of asset names whose value is the above. AIPG values
   will be denoted as "AIPG".
 
 **Result Example**
@@ -1184,9 +1184,9 @@ Return an ordered list of UTXOs sent to a script hash.
 
   *asset*
 
-    An optional value that can be: :const:`False` to return only Ravencoin outputs, :const:`True` to 
+    An optional value that can be: :const:`False` to return only AIPG outputs, :const:`True` to 
     return all utxos, an asset name to return outputs for the asset, or a list of assets to return
-    outputs for those assets (a value of null indicates Ravencoin outputs).
+    outputs for those assets (a value of null indicates AIPG outputs).
 
 **Result**
 
