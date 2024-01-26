@@ -9,11 +9,11 @@ The AIPG electrum wallet – currently one of the few that support the hardware 
 
 ### System requirements
 
-While pretty much any Linux distribution should work, this guide uses Ubuntu 20.04 running on a VPS server as an example setup. Performance-wise, minimum specs are 40 GB of disk space, 2 GB RAM + 2 GB swap and preferably unlimited network traffic, as 1 TB can be easily reached within a few days. CPU is not too much of a concern, as the electrumx server we will use is mostly implemented in Python running in a single thread. Higher CPU spec- and / or count may speed up syncing, though a reliable and fast network connection is still the best guarantee for a seamless operation of the system. The following guide assumes you are running the AIPG and electrumx server as a non-root user and all commands should be run from the user account created. 
+While pretty much any Linux distribution should work, this guide uses Debian running on a VPS server as an example setup. Performance-wise, minimum specs are 40 GB of disk space, 2 GB RAM + 2 GB swap and preferably unlimited network traffic, as 1 TB can be easily reached within a few days. CPU is not too much of a concern, as the electrumx server we will use is mostly implemented in Python running in a single thread. Higher CPU spec- and / or count may speed up syncing, though a reliable and fast network connection is still the best guarantee for a seamless operation of the system. The following guide assumes you are running the AIPG and electrumx server as a non-root user and all commands should be run from the user account created. 
 
 ### Step-by-step setup of the node
 
-- Setup a system running Ubuntu 20.04 or install it through a pre-build image with any of the countless VPS providers. After installation, it is good practice to do a sudo apt update to get the installation sources provided by your VPS host and bring the system up-to-date with sudo apt upgrade.
+- Setup a system running Debian 12 or install it through a pre-build image with any of the countless VPS providers. After installation, it is good practice to do a sudo apt update to get the installation sources provided by your VPS host and bring the system up-to-date with sudo apt upgrade.
 
 - Setup a user account (e.g. electrumx). You may want to setup SSH key authentication with this account and remove root access (once ssh with key is proved working) in /etc/ssh/sshd\_config, so any subsequent login can only be through this account putting an extra layer of security. 
 
