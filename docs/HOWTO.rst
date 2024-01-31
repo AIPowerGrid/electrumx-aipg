@@ -33,10 +33,10 @@ You **must** to be running a non-pruning AIPG daemon with::
   assetindex=1
 
 set in its configuration file.  If you have an existing installation
-of ravend and have not previously set this you will need to reindex
+of aipgd and have not previously set this you will need to reindex
 the blockchain with::
 
-  ravend -reindex
+  aipgd -reindex
 
 which can take some time.
 
