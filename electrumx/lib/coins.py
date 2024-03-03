@@ -242,8 +242,8 @@ class AIPG(Coin):
     RPC_PORT = 8865
     REORG_LIMIT = 60
     PEERS = [
-        'electrum-AIPG1.aipowergrid.io t s',
-        'electrum-AIPG2.aipowergrid.io t s',
+        'electrumx1.aipowergrid.io t s',
+        'electrumx2.aipowergrid.io t s',
     ]
 
     @classmethod
@@ -287,6 +287,6 @@ class AIPGTestnet(AIPG):
 
     RPC_PORT = 18865
     PEERS = [
-        "electrum-AIPG1-testnet.aipowergrid.io t50011 s50012",
-        "electrum-AIPG2-testnet.aipowergrid.io t50011 s50012",
+        "electrumx1-testnet.aipowergrid.io t50011 s50012",
+        "electrumx2-testnet.aipowergrid.io t50011 s50012",
     ]
