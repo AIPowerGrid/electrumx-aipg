@@ -116,7 +116,7 @@ DAEMON\_URL = http://\<rpcuser\>:\<rpcpwd\>@localhost (user/pwd from rpc in aipg
 
 COIN = AIPG 
 
-SERVICES = ssl://:50002
+SERVICES = ssl://:50002,wss://:50004
 
 REPORT\_SERVICES = ssl://{your ip/domain here}:50002 (Only if you wish to broadcast your server to the wider network)
 

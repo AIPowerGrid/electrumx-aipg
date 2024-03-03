@@ -35,7 +35,7 @@ WORKDIR /home/electrumx
 
 RUN rm -r electrumx-aipg-${VERSION}
 
-ENV SERVICES="ssl://:50002,tcp://:50001,rpc://:8000"
+ENV SERVICES="ssl://:50002,wss://:50004"
 ENV COIN=AIPG
 ENV DB_DIRECTORY=/db
 ENV DAEMON_URL="http://username:password@hostname:port/"
